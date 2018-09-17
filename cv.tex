@@ -1,0 +1,137 @@
+\documentclass{resume}
+\usepackage[dvipsnames,svgnames,x11names,hyperref]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage[colorlinks = true,
+            linkcolor = green,
+            urlcolor  = OliveGreen,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage[utf8]{inputenc}
+
+\renewcommand\refname{Publications}
+
+\begin{document}
+
+\begin{center}
+\textsc{\huge{Emma Strubell}}\\
+\tikz \draw [-,
+% OliveGreen,
+line join=round,
+decorate, decoration={
+    coil,
+    segment length=8,
+    amplitude=.5,
+}]  (0,0) -- (8,0); \\
+\smallskip
+\small{strubell@cs.umass.edu}\\
+\small{\href{http://cs.umass.edu/~strubell}{http://cs.umass.edu/{\raise.17ex\hbox{$\scriptstyle\sim$}}strubell}}
+\end{center}
+
+
+\section{Education}
+
+\stdtable{
+ & \textbf{University of Massachusetts Amherst} \hfill 2012 --- 2019\\
+ & Ph.D. in Computer Science \\
+ & M.S. in Computer Science, 2012 --- 2015 \\ \\
+ & \textbf{University of Maine} \hfill 2008 --- 2012\\
+    & B.S. in Computer Science, \emph{summa cum laude}\\
+    & Minor: Mathematics \& Statistics\\
+}
+
+\section{Research \& Professional Experience}
+
+\employer
+    {\textbf{Research Assistant}, \href{http://cics.umass.edu}{University of Massachusetts Amherst}}
+    {September 2013 --- present}
+    {Advisor: \href{http://cs.umass.edu/~mccallum}{Andrew McCallum}} {http://cics.umass.edu}
+\\ \\ \\
+\employer
+    {\textbf{Research Intern}, \href{https://ai.google/research/teams/language/}{Google AI Language}}
+    {May --- August 2017}
+    {Supervisors: \href{https://ai.google/research/people/DanielAndor}{Daniel Andor}, \href{https://ai.google/research/people/DavidWeiss}{David Weiss}}
+\\ \\ \\ \\
+\employer
+    {\textbf{Research Intern}, \href{https://developer.amazon.com/alexa/science}{Amazon Alexa Science}}
+    {June --- September 2016}
+    {Supervisor: \href{http://www.tkollar.com/}{Thomas Kollar}}
+\\ \\ \\ \\
+\employer
+{\textbf{Research Assistant}, \href{http://cics.umass.edu}{University of Massachusetts Amherst}}
+{September 2012 --- May 2013}
+{Advisor: \href{http://cs.umass.edu/~hava}{Hava Siegelmann}} {http://cics.umass.edu}
+
+\section{Awards}
+\begin{itemize}
+\item {IBM PhD Fellowship Award, 2017--2018}
+\item {Yahoo Outstanding Accomplishments in Search and Mining Award, 2016}
+\item {Grace Hopper Conference Scholarship Grant (21\% acceptance), 2015}
+\item {EMC CRA-W Grad Cohort Scholarship Award, 2015}
+\item {Outstanding Paper Award, ACL 2015}
+% \item {College of Liberal Arts & Sciences Undergraduate Research Fellowship, 2011--2012}
+\end{itemize}
+\clearpage
+
+\nocite{*}
+\bibliography{publications}
+\bibliographystyle{unsrt}
+% \begin{enumerate}
+
+% \item Eunsol Choi*, He He*, {\bfseries Mohit Iyyer}*, Mark Yatskar*, Wen-tau Yih, Yejin Choi, Percy Liang, Luke Zettlemoyer.
+%  \href{https://arxiv.org/abs/1808.07036}{QuAC: Question Answering in Context.} \emph{EMNLP} 2018. 
+
+% \section{Talks}
+% \begin{itemize}
+% \item November 2018: CMU LTI Colloquium
+% \item March 2018: UMass CS Women Lunch
+% \end{itemize}
+
+\section{Teaching}
+\employer
+    {\textbf{Guest Lecturer}, \href{http://cics.umass.edu}{University of Massachusetts Amherst}}
+    {October 2017}
+    {Course: \href{https://compsci682.github.io/syllabus.html}{Neural Networks} with \href{http://cs.umass.edu/~elm}{Erik Learned-Miller}} {http://cics.umass.edu}
+\\ \\ \\ 
+\employer
+    {\textbf{Teaching Assistant}, \href{http://cics.umass.edu}{University of Massachusetts Amherst}}
+    {September --- December 2012}
+    {Course: \href{https://people.cs.umass.edu/~immerman/cs250/syllabus.html}{Introduction to Computation} with \href{http://cs.umass.edu/~immerman}{Neil Immerman}} {http://cics.umass.edu}
+
+
+\section{Service \& Outreach}
+\begin{itemize}
+\item Panelist, \emph{Succeeding in Graduate School: Advice from Outstanding Students in the Sciences}, 2017. 
+\item Co-organizer and mentor, Cross-cultural Graduate Peer Mentoring Program (\$1000 Welcoming the World to Amherst Grant), 2017
+\item Co-organizer, CS Women Travel Grant Program (\$5000 Women for UMass Grant), 2016--2017.
+\item Co-organizer, CS Women Technical Skills Workshops (\$1000 NCWIT Seed Grant), 2015--2016.
+\item Co-chair and treasurer, UMass CS Women, 2015--2017.
+\item Senator, UMass Graduate Student Senate, 2014--2015.
+\item Mentor, Girls Inc. Eureka! Workshop (Programming in Scratch), 2014, 2015.
+\item Mentor, CAITE Women in Engineering \& Computing Career Day, 2013, 2015.
+\item Steward, UMass Graduate Employee Organization (UAW 2322), 2013--2014.
+\item Reviewer, NCWIT Aspirations in Computing Scholarship, 2013, 2014.
+\item Program Committees: ACL 2017, 2018 (top reviewer); EMNLP 2015, 2017, 2018; SCiL 2019; PLDI 2016.
+\item Student volunteer, NAACL 2018.
+\end{itemize}
+
+\section{Professional Development}
+\begin{itemize}
+\item WW2A Cross-Cultural Mentoring Workshop, 2016.
+\item \href{https://www.cirtl.net/courses/261}{CIRTL Research Mentor Training Course}, 2016.
+\item UMass OPD Workshop on Engaging Students in Effective Discussions and Active Learning, 2015.
+\end{itemize}
+
+\section{Mentoring}
+\begin{itemize}
+\item Juhi Shah (2018). Undergraduate independent study at Mt. Holyoke College. \emph{Automatically detecting fake news using neural networks}.
+\item Ananya Ganesh (2018). Masters project at University of Massachusetts Amherst. \emph{Improved representation learning for semantic role labeling}.
+\item Sheshera Mysore (2017). Masters project at University of Massachusetts Amherst. \emph{Kernelized matrix completion for predicate-argument schema induction and extraction}.
+\item Aditya Shastry (2017). Masters project at University of Massachusetts Amherst. \emph{Automatic header field extraction from research articles}.
+\item Molly McMahon (2016). Masters project at University of Massachusetts Amherst. \emph{Automatic citation field extraction from research articles}
+\item Abdurrahman Munir (2016). Louis Stokes Alliance for Minority Participation (LSAMP) undergraduate research fellow at University of Massachusetts Amherst. \emph{Character-level modeling for Arabic tokenization and named entity recognition}.
+\item Katherine Silverstein (2015). Undergraduate independent study at University of Massachusetts Amherst. \emph{Fast and accurate models for named entity recognition}.
+\end{itemize}
+
+
+\end{document}
