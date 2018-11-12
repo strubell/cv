@@ -1,6 +1,7 @@
 \documentclass{resume}
 \usepackage[dvipsnames,svgnames,x11names,hyperref]{xcolor}
 \usepackage{tikz}
+% \usepackage{natbib}
 \usetikzlibrary{decorations.pathmorphing}
 \usepackage[colorlinks = true,
             linkcolor = green,
@@ -10,6 +11,16 @@
 \usepackage[utf8]{inputenc}
 
 \renewcommand\refname{Publications}
+
+\def\FormatName#1{%
+  \def\myname{Emma Strubell}%
+  \edef\name{#1}%
+  \ifx\name\myname
+    \textbf{#1}%
+  \else
+    #1%
+  \fi
+}
 
 \begin{document}
 
@@ -81,7 +92,7 @@ decorate, decoration={
 
 \nocite{*}
 \bibliography{publications}
-\bibliographystyle{unsrt}
+\bibliographystyle{unsrt_bold}
 % \begin{enumerate}
 
 % \item Eunsol Choi*, He He*, {\bfseries Mohit Iyyer}*, Mark Yatskar*, Wen-tau Yih, Yejin Choi, Percy Liang, Luke Zettlemoyer.
